@@ -203,7 +203,7 @@ Open Software License **OSL-3.0** and Academic Free License **AFL-3.0** (see `co
 
 ## Support & author
 
-- **Author:** Areeb Khan / AkStackPro  
+- **Author:** Areeb Khan (SR. Backend Developer)
 - **Homepage:** [http://akstackpro.com/](http://akstackpro.com/)
 
 For issues, confirm Magento version, PHP version, and whether report statistics have been refreshed after installing the module.
