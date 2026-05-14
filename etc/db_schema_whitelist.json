@@ -1,0 +1,12 @@
+{
+    "sales_order_aggregated_created": {
+        "column": {
+            "total_item_cost_amount": true
+        }
+    },
+    "sales_order_aggregated_updated": {
+        "column": {
+            "total_item_cost_amount": true
+        }
+    }
+}

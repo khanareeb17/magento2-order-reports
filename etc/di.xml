@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author    AkStackPro
+ * @copyright Copyright (c) 2026 AkStackPro (http://akstackpro.com/)
+ * @package   AkStackPro_SalesOrdersCostReport
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:DI/etc/di.xsd">
+    <preference for="Magento\Sales\Model\ResourceModel\Report\Order\Createdat"
+                type="AkStackPro\SalesOrdersCostReport\Model\ResourceModel\Report\Order\Createdat"/>
+    <preference for="Magento\Sales\Model\ResourceModel\Report\Order\Updatedat"
+                type="AkStackPro\SalesOrdersCostReport\Model\ResourceModel\Report\Order\Updatedat"/>
+    <preference for="Magento\Sales\Model\ResourceModel\Report\Order\Collection"
+                type="AkStackPro\SalesOrdersCostReport\Model\ResourceModel\Report\Order\Collection"/>
+    <preference for="Magento\Sales\Model\ResourceModel\Report\Order\Updatedat\Collection"
+                type="AkStackPro\SalesOrdersCostReport\Model\ResourceModel\Report\Order\Updatedat\Collection"/>
+    <preference for="Magento\Reports\Block\Adminhtml\Sales\Sales\Grid"
+                type="AkStackPro\SalesOrdersCostReport\Block\Adminhtml\Sales\Sales\Grid"/>
+</config>

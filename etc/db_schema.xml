@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Adds a "total_item_cost_amount" column to the aggregated order report tables.
+ * Stores the sum of (product cost * qty_ordered) for orders in the aggregation period,
+ * expressed in the base/global currency (multiplied by base_to_global_rate).
+ *
+ * @author    AkStackPro
+ * @copyright Copyright (c) 2026 AkStackPro (http://akstackpro.com/)
+ * @package   AkStackPro_SalesOrdersCostReport
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sales_order_aggregated_created" resource="sales" engine="innodb"
+           comment="Sales Order Aggregated Created">
+        <column xsi:type="decimal" name="total_item_cost_amount" scale="4" precision="20"
+                unsigned="false" nullable="false" default="0"
+                comment="Total Item Cost Amount (Product Cost * Qty Ordered)"/>
+    </table>
+    <table name="sales_order_aggregated_updated" resource="sales" engine="innodb"
+           comment="Sales Order Aggregated Updated">
+        <column xsi:type="decimal" name="total_item_cost_amount" scale="4" precision="20"
+                unsigned="false" nullable="false" default="0"
+                comment="Total Item Cost Amount (Product Cost * Qty Ordered)"/>
+    </table>
+</schema>
